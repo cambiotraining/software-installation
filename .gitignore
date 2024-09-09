@@ -21,3 +21,7 @@ _site
 # Jupyter cache
 .jupyter_cache
 /.luarc.json
+
+# misc
+.DS_Store
+

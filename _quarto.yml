@@ -62,6 +62,4 @@ book:
       chapters:
         - text: "Overview"
           href: index.md
-        - text: "Data & Setup"
-          href: setup.md
     

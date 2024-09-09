@@ -1,5 +1,6 @@
 book:
   chapters:
-    - part: "Developer Guidelines"
+    - part: "Programming languages"
       chapters:
-        - materials/python-base.qmd
+        - materials/r-base.md
+        - materials/python-base.md
