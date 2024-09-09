@@ -1,5 +1,8 @@
 book:
   chapters:
+    - part: "Package managers"
+      chapters:
+        - materials/mamba.md
     - part: "Programming languages"
       chapters:
         - materials/r-base.md
