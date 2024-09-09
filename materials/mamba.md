@@ -9,29 +9,11 @@ For all our courses we use *Mamba*.
 
 #### MacOS
 
-Before we can install mamba, we need to install two other things:
-
-1. Apple's Command Line Developers Tools
-
-```bash
- xcode-select --install
- ```
- 
-2. Bash
-
-Install [MacPorts](https://www.macports.org/install.php), then run the following, saying yes to any dependencies it suggests:
-
-```bash
-sudo port install bash
-```
-
-**Installing mamba**
-
-Run the following commands from the terminal (this will install it in its default location in the home directory): 
+To install _Mamba_, run the following commands from the terminal (this will install it in its default location in the home directory):
 
 ```bash
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
-bash Miniforge3-$(uname)-$(uname -m).sh -b -p $HOME/miniforge3
+/bin/bash Miniforge3-$(uname)-$(uname -m).sh -b -p $HOME/miniforge3
 rm Miniforge3-$(uname)-$(uname -m).sh
 $HOME/miniforge3/bin/mamba init
 ```
