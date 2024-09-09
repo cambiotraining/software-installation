@@ -4,7 +4,7 @@ title: "R"
 
 To run R, we need to install R (the programming language). We also install RStudio, which acts as a graphical interface for R.
 
-::: {.tabset group="os"}
+::: {.panel-tabset group="os"}
 
 #### Windows 10/11
 
