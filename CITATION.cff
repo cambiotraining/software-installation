@@ -18,19 +18,13 @@ authors:
     affiliation: Cambridge Centre for Research Informatics Training
     website: 'https://bioinfotraining.bio.cam.ac.uk/staff/hugo-tavares-phd'
     orcid: 'https://orcid.org/0000-0001-9373-2726'
-    alias: 'writing - original draft; conceptualisation; software'
+    alias: 'writing - original draft; software'
   - given-names: Martin
     family-names: van Rongen
     affiliation: Cambridge Centre for Research Informatics Training
     orcid: 'https://orcid.org/0000-0002-1441-367X'
-    alias: 'writing - review & editing; conceptualisation; software'
-  - given-names: Alexia
-    family-names: Cardona
-    affiliation: Cambridge Centre for Research Informatics Training
-    orcid: 'https://orcid.org/0000-0002-7877-5565'
-    alias: 'conceptualisation'
-repository-code: 'https://github.com/cambiotraining/quarto-course-template'
-url: 'https://cambiotraining.github.io/quarto-course-template/'
+    alias: 'writing - original draft; software'
+repository-code: 'https://github.com/cambiotraining/software-installation'
+url: 'https://cambiotraining.github.io/software-installation/'
 license: CC-BY-4.0
-commit: 3c8234e82c7315cfb4d869d9635433bf62baf17f
-date-released: '2024-08-23'
+date-released: '2024-09-10'

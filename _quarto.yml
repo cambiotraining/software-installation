@@ -48,7 +48,7 @@ book:
     logo: "_extensions/cambiotraining/courseformat/img/university_crest_reversed.png"
     right:
       - icon: github
-        href: https://github.com/cambiotraining/installation-instructions
+        href: https://github.com/cambiotraining/software-installation
         aria-label: Bioinformatics Training Facility GitHub
       - icon: twitter
         href: https://twitter.com/bioinfocambs
