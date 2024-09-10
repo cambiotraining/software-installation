@@ -2,6 +2,9 @@
 title: "Conda/Mamba"
 ---
 
+**Mamba** is a popular package manager in data science, scientific computing and bioinformatics, which is a successor to another package manager called Conda.
+Below we give instructions on how to use the Miniforge installer on all major operating systems.
+
 ::: {.panel-tabset group="os"}
 #### Windows 10/11
 

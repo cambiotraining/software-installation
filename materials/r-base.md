@@ -14,7 +14,7 @@ Download and install all these using default options:
 - [RTools](https://cran.r-project.org/bin/windows/Rtools/)
 - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
 
-#### MacOS
+#### macOS
 
 Download and install all these using default options:
 
