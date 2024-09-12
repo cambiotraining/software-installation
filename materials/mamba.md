@@ -60,6 +60,7 @@ conda config --set channel_priority strict
 conda config --set remote_read_timeout_secs 1000
 ```
 
+
 #### Linux
 
 Open a terminal and copy/paste the following commands (this will install Mamba in its default location in the home directory): 
@@ -83,3 +84,33 @@ conda config --set remote_read_timeout_secs 1000
 ```
 
 :::
+
+
+Finally, **check your installation**.
+The following command: 
+
+```bash
+conda config --show channels
+```
+
+Should output:
+   
+```
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+```
+
+And this command:
+
+```bash
+mamba --version
+```
+
+Should output (the version numbers may be higher in your case): 
+
+```
+mamba 1.4.2
+conda 23.1.0
+```

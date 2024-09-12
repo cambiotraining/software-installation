@@ -24,7 +24,7 @@ Then return to this page.
 * Install JupyterLab (for notebook interface), Pandas (for data manipulation) and Seaborn (for data visualisation):
 
     ```bash
-    mamba install -y -n pycourse jupyterlab pandas seaborn
+    mamba install -y -n pycourse jupyterlab
     ```
 
 * The installation should complete with the following message: 
