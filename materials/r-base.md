@@ -1,6 +1,8 @@
 ---
-title: "R"
+pagetitle: "Software installation"
 ---
+
+# R
 
 To run R, we need to install R (the programming language). We also install RStudio, which acts as a graphical interface for R.
 

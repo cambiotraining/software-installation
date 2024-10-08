@@ -1,6 +1,8 @@
 ---
-title: "Python"
+pagetitle: "Software installation"
 ---
+
+# Python
 
 We recommend using the package manager Mamba to manage your Python installation and environments. 
 Our recommendation is to create separate environments for each project or type of analysis, to avoid package version conflicts. 
