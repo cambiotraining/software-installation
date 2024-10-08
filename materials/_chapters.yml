@@ -3,8 +3,6 @@ book:
     - part: "System setup"
       chapters: 
         - materials/wsl.md
-    - part: "Package managers"
-      chapters:
         - materials/mamba.md
     - part: "Programming"
       chapters:
