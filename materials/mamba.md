@@ -10,6 +10,12 @@ Below we give instructions on how to use the Miniforge installer on all major op
 ::: {.panel-tabset group="os"}
 #### Windows 10/11
 
+:::{.callout-important}
+#### WSL2 users
+
+The instructions below are for a native Mamba Windows installer. If you are using WSL2 ([our recommendation](wsl.md)), then follow the instructions on the "Linux" tab.
+:::
+
 - Download the Miniforge3 installer [from this link](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe)
 - Double-click the downloaded file to start the installation wizard
 - You may get a warning from Windows Defender
