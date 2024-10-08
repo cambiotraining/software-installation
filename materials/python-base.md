@@ -23,7 +23,7 @@ Then return to this page.
     mamba create -n pycourse
     ```
 
-* Install JupyterLab (for notebook interface), Pandas (for data manipulation) and Seaborn (for data visualisation):
+* Install JupyterLab (for notebook interface):
 
     ```bash
     mamba install -y -n pycourse jupyterlab
