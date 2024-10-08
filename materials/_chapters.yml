@@ -1,9 +1,13 @@
 book:
   chapters:
+    - part: "System setup"
+      chapters: 
+        - materials/wsl.md
     - part: "Package managers"
       chapters:
         - materials/mamba.md
-    - part: "Programming languages"
+    - part: "Programming"
       chapters:
         - materials/r-base.md
         - materials/python-base.md
+        - materials/vscode.md
