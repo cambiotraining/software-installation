@@ -3,6 +3,7 @@ book:
     - part: "System setup"
       chapters: 
         - materials/wsl.md
+        - materials/macos.md
         - materials/mamba.md
     - part: "Programming"
       chapters:
