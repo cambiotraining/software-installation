@@ -30,6 +30,17 @@ You should now have access to a Ubuntu Linux terminal.
 This behaves very much like a regular Ubuntu server. 
 
 
+## Update essential packages
+
+After making a fresh install of Ubuntu on WSL, it's a good idea to update the system and install some essential packages: 
+
+```bash
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+sudo apt install -y git
+sudo apt install -y default-jre
+```
+
+
 ## Directory shortcuts
 
 After installation, it is useful to **create shortcuts to your directories on Windows**. 
