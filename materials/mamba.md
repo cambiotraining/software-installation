@@ -38,7 +38,6 @@ The instructions below are for a native Mamba Windows installer. If you are usin
 - Copy and paste the following commands to finish setting up your installation: 
 
     ```bash
-    conda config --add channels defaults
     conda config --add channels bioconda
     conda config --add channels conda-forge
     conda config --set channel_priority strict
@@ -61,7 +60,6 @@ Restart your terminal and confirm that your shell now starts with the word `(bas
 Copy and paste the following commands to finish setting up your installation: 
 
 ```bash
-conda config --add channels defaults
 conda config --add channels bioconda
 conda config --add channels conda-forge
 conda config --set channel_priority strict
@@ -84,7 +82,6 @@ Restart your terminal and confirm that your shell now starts with the word `(bas
 Copy and paste the following commands to finish setting up your installation: 
 
 ```bash
-conda config --add channels defaults
 conda config --add channels bioconda
 conda config --add channels conda-forge
 conda config --set channel_priority strict
@@ -107,7 +104,6 @@ Should output:
 channels:
   - conda-forge
   - bioconda
-  - defaults
 ```
 
 And this command:
