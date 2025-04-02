@@ -1,0 +1,178 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Software installation instructions",
+    "section": "",
+    "text": "Overview\nHere you can find a collection of installation instructions. These are related to the suite of courses that we run.\nWe are currently expanding them, but for now support the following courses:",
+    "crumbs": [
+      "Welcome",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Software installation instructions",
+    "section": "",
+    "text": "Introduction to R\nIntroduction to Python",
+    "crumbs": [
+      "Welcome",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
+  },
+  {
+    "objectID": "materials/wsl.html",
+    "href": "materials/wsl.html",
+    "title": "2  WSL",
+    "section": "",
+    "text": "2.1 Installing WSL2\nThe Windows Subsystem for Linux (WSL2) is a compatibility layer within Windows that enables users to run a Linux “core” alongside the Windows operating system. It is available for Windows 11 and recent versions of Windows 10.\nWSL2 provides a seamless integration between Windows and Linux environments, allowing users to execute native Linux commands and run Linux applications directly on a Windows machine. WSL2 is designed to be compatible with the Windows filesystem, allowing you to easily interact with your Windows files.\nThere are detailed instructions on how to install WSL on the Microsoft documentation page. But briefly:\nYou should now have access to a Ubuntu Linux terminal. This behaves very much like a regular Ubuntu server.",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>WSL</span>"
+    ]
+  },
+  {
+    "objectID": "materials/wsl.html#installing-wsl2",
+    "href": "materials/wsl.html#installing-wsl2",
+    "title": "2  WSL",
+    "section": "",
+    "text": "Click the Windows key and search for Windows PowerShell, right-click on the app and choose Run as administrator.\nAnswer “Yes” when it asks if you want the App to make changes on your computer.\nA terminal will open; run the command: wsl --install.\nProgress bars will show while installing “Virtual Machine Platform”, “Windows Subsystem for Linux” and finally “Ubuntu” (this process can take a long time).\nAfter installation completes, restart your computer.\nAfter restart, a terminal window will open asking you to create a username and password.\nIf it doesn’t, click the Windows key and search for Ubuntu, click on the App and it should open a new terminal.\n\nYou can use the same username and password that you have on Windows, or a different one - it’s your choice. Spaces and other special characters are not allowed for your Ubuntu username.\nNote: when you type your password nothing seems to be happening as the cursor doesn’t move. However, the terminal is recording your password as you type. You will be asked to type the new password again to confirm it, so you can always try again if you get it wrong the first time.",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>WSL</span>"
+    ]
+  },
+  {
+    "objectID": "materials/wsl.html#update-essential-packages",
+    "href": "materials/wsl.html#update-essential-packages",
+    "title": "2  WSL",
+    "section": "2.2 Update essential packages",
+    "text": "2.2 Update essential packages\nAfter making a fresh install of Ubuntu on WSL, it’s a good idea to update the system and install some essential packages:\nsudo apt update && sudo apt upgrade -y && sudo apt autoremove -y\nsudo apt install -y git\nsudo apt install -y default-jre",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>WSL</span>"
+    ]
+  },
+  {
+    "objectID": "materials/wsl.html#directory-shortcuts",
+    "href": "materials/wsl.html#directory-shortcuts",
+    "title": "2  WSL",
+    "section": "2.3 Directory shortcuts",
+    "text": "2.3 Directory shortcuts\nAfter installation, it is useful to create shortcuts to your directories on Windows. Your main C:\\ drive is located in /mnt/c/ and other drives will be equally available based on their letter. To create shortcuts to commonly-used directories you use symbolic links.\nThe following commands automatically create shortcuts to your Windows “Documents”, “Desktop” and “Downloads” folders (copy/paste these commands on the terminal):\nln -s $(wslpath $(powershell.exe '[environment]::getfolderpath(\"MyDocuments\")' | tr -d '\\r')) ~/Documents\nln -s $(wslpath $(powershell.exe '[environment]::getfolderpath(\"Desktop\")' | tr -d '\\r')) ~/Desktop\nln -s $(wslpath $(powershell.exe '[environment]::getfolderpath(\"UserProfile\")' | tr -d '\\r'))/Downloads ~/Downloads\nAfter running these commands, if you list the files in your home directory (ls -l), you should see the shortcuts just created.",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>WSL</span>"
+    ]
+  },
+  {
+    "objectID": "materials/wsl.html#default-terminal",
+    "href": "materials/wsl.html#default-terminal",
+    "title": "2  WSL",
+    "section": "2.4 Default terminal",
+    "text": "2.4 Default terminal\nYou can configure the Windows terminal to automatically open WSL2 (instead of the default Windows Command Prompt or Powershell):\n\nSearch for and open the “ Terminal” application.\nClick on the down arrow  in the toolbar.\nClick on “ Settings”.\nUnder “Default Profile” select “ Ubuntu”.",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>WSL</span>"
+    ]
+  },
+  {
+    "objectID": "materials/wsl.html#visual-studio-code",
+    "href": "materials/wsl.html#visual-studio-code",
+    "title": "2  WSL",
+    "section": "2.5 Visual Studio Code",
+    "text": "2.5 Visual Studio Code\nVisual Studio Code is a text editor which integrates very well with WSL2. Instructions to install it are given on a separate page.",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>WSL</span>"
+    ]
+  },
+  {
+    "objectID": "materials/macos.html",
+    "href": "materials/macos.html",
+    "title": "3  macOS",
+    "section": "",
+    "text": "3.1 Xcode Command Line Tools\nWe recommend installing the Xcode Command Line Tools, which makes several useful software utilities available.\nOpen a terminal and run:",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>macOS</span>"
+    ]
+  },
+  {
+    "objectID": "materials/macos.html#xcode-command-line-tools",
+    "href": "materials/macos.html#xcode-command-line-tools",
+    "title": "3  macOS",
+    "section": "",
+    "text": "xcode-select --install",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>macOS</span>"
+    ]
+  },
+  {
+    "objectID": "materials/macos.html#homebrew",
+    "href": "materials/macos.html#homebrew",
+    "title": "3  macOS",
+    "section": "3.2 Homebrew",
+    "text": "3.2 Homebrew\nOn macOS the brew package manager is a popular choice for installing packages as a user. Note that for research work we recommend using Mamba for managing software environments, but for general utilities brew is a good solution.\nFirst, make sure to install Xcode as instructed in the previous section. Then, open a terminal and run:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nTest your brew installation by installing the wget utility, which is used to download files from the web:\nbrew install wget",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>macOS</span>"
+    ]
+  },
+  {
+    "objectID": "materials/mamba.html",
+    "href": "materials/mamba.html",
+    "title": "4  Conda/Mamba",
+    "section": "",
+    "text": "Mamba is a popular package manager in data science, scientific computing and bioinformatics, which is a successor to another package manager called Conda. Below we give instructions on how to use the Miniforge installer on all major operating systems.\n\nWindows 10/11macOSLinux\n\n\n\n\n\n\n\n\nWSL2 users\n\n\n\nThe instructions below are for a native Mamba Windows installer. If you are using WSL2 (our recommendation), then follow the instructions on the “Linux” tab.\n\n\n\nDownload the Miniforge3 installer from this link\nDouble-click the downloaded file to start the installation wizard\nYou may get a warning from Windows Defender\n\n\n\nClick “More info” and then “Run anyway”\n\n\n\nProceed with the installation accepting all the defaults\n\n\n\nTo use mamba you can search your windows menu for “miniforge” and click on the “Miniforge Prompt” application\n\n\n\nThis should open a terminal, which starts with the word (base).\nCopy and paste the following commands to finish setting up your installation:\nconda config --add channels bioconda\nconda config --add channels conda-forge\nconda config --set channel_priority strict\nconda config --set remote_read_timeout_secs 1000\n\n\n\nOpen a terminal and copy/paste the following commands (this will install Mamba in its default location in the home directory):\ncurl -L -O \"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh\"\n/bin/bash Miniforge3-$(uname)-$(uname -m).sh -b -p $HOME/miniforge3\nrm Miniforge3-$(uname)-$(uname -m).sh\n$HOME/miniforge3/bin/mamba init --all\nRestart your terminal and confirm that your shell now starts with the word (base). Copy and paste the following commands to finish setting up your installation:\nconda config --add channels bioconda\nconda config --add channels conda-forge\nconda config --set channel_priority strict\nconda config --set remote_read_timeout_secs 1000\n\n\nOpen a terminal and copy/paste the following commands (this will install Mamba in its default location in the home directory):\nwget \"https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh\"\nbash Miniforge3-$(uname)-$(uname -m).sh -b -p $HOME/miniforge3\nrm Miniforge3-$(uname)-$(uname -m).sh\n$HOME/miniforge3/bin/mamba init\nRestart your terminal and confirm that your shell now starts with the word (base). Copy and paste the following commands to finish setting up your installation:\nconda config --add channels bioconda\nconda config --add channels conda-forge\nconda config --set channel_priority strict\nconda config --set remote_read_timeout_secs 1000\n\n\n\nFinally, check your installation. The following command:\nconda config --show channels\nShould output:\nchannels:\n  - conda-forge\n  - bioconda\nAnd this command:\nmamba --version\nShould output (the version numbers may be higher in your case):\nmamba 1.4.2\nconda 23.1.0",
+    "crumbs": [
+      "System setup",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Conda/Mamba</span>"
+    ]
+  },
+  {
+    "objectID": "materials/r-base.html",
+    "href": "materials/r-base.html",
+    "title": "5  R",
+    "section": "",
+    "text": "To run R, we need to install R (the programming language). We also install RStudio, which acts as a graphical interface for R.\n\nWindows 10/11macOSLinux\n\n\nYou can install R and RStudio using winget. Click the Windows key and search for Windows PowerShell, right-click on the app and choose Run as administrator. Then run the following commands:\nwinget install --id=RProject.R -e\nwinget install --id=RProject.Rtools -e\nwinget install --id=Posit.RStudio -e\nAlternatively, you can manually download and install these programs using default options:\n\nR\nRTools\nRStudio\n\n\n\nIf you followed our macOS system setup instructions, you can install R and RStudio using brew. Open a terminal and run:\nbrew install --cask r\nbrew install --cask rstudio\nAlternatively, you can manually download and install these programs using default options:\n\nR\nRStudio\n\n\n\n\nGo to the R installation folder and look at the instructions for your distribution.\nDownload the RStudio installer for your distribution and install it using your package manager.",
+    "crumbs": [
+      "Programming",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>R</span>"
+    ]
+  },
+  {
+    "objectID": "materials/python-base.html",
+    "href": "materials/python-base.html",
+    "title": "6  Python",
+    "section": "",
+    "text": "6.1 Initiate JupyterLab\nWe recommend using the package manager Mamba to manage your Python installation and environments. Our recommendation is to create separate environments for each project or type of analysis, to avoid package version conflicts. In this page we give an example of creating an environment for our Python introduction course, which includes JupyterLab.\nOnce installed, you can start JupyterLab by activating your environment and running the command to launch it:\nJupyterLab should open in your browser automatically. If it doesn’t, you can click the link that appears on the message printed on the screen:\nBy default, JupyterLab will open in the directory where you launch it from. If the files you are interested in working with are in a different directory, you need to change to that directory first.\nFor example, let’s say you had a folder in your Desktop called intro-python. To open JupyterLab in that folder, you would first cd into it, and then run the jupyter lab command.",
+    "crumbs": [
+      "Programming",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Python</span>"
+    ]
+  },
+  {
+    "objectID": "materials/python-base.html#initiate-jupyterlab",
+    "href": "materials/python-base.html#initiate-jupyterlab",
+    "title": "6  Python",
+    "section": "",
+    "text": "mamba activate pycourse\njupyter lab",
+    "crumbs": [
+      "Programming",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Python</span>"
+    ]
+  },
+  {
+    "objectID": "materials/vscode.html",
+    "href": "materials/vscode.html",
+    "title": "7  Visual Studio Code",
+    "section": "",
+    "text": "Visual Studio Code is a popular text editor with many useful extensions to make programming easier.\n\nWindows 10/11macOSLinux\n\n\n\nGo to the Visual Studio Code download page and download the installer for your operating system.\nDouble-click the downloaded file to install the software, accepting all the default options.\nAfter completing the installation, search for “Visual Studio Code” and launch the application.\nGo to “File &gt; Preferences &gt; Settings”, then select “Text Editor &gt; Files” on the drop-down menu on the left. Scroll down to the section named “EOL” and choose “\\n” (this will ensure that the files you edit on Windows are compatible with the Linux operating system).\nAssuming you have set WSL2 (instructions): press Ctrl + Shift + P. Search for “Terminal: Select Default Profile” and click. Then click on either “WSL Ubuntu” or “bash”.\nYou can now close VS Code.\n\n\n\n\nDetermine the type of processor on your Mac. On the top-left of your toolbar click “ apple” &gt; “About this Mac”.\n\nIf you see “Intel” on your processor/chip information, then you have an Intel processor.\nIf you see “M[1,2,3,4]”, then you have an M-series chip.\n\nGo to the Visual Studio Code download page and download the correct installer based on the previous step.\nFollow the installation instructions on the VS Code documentation page\n\n\n\n\nOpen a terminal and run the command uname -m. This will help you determine the installer you should download in the next step:\n\nx86_64 = “x64”\naarch64 or arm64 = “ARM64”\narmv7l or armhf = “ARM32”\n\nGo to the Visual Studio Code download page and download the correct installer based on the previous step.\nInstall the software using your usual package manager.",
+    "crumbs": [
+      "Programming",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Visual Studio Code</span>"
+    ]
+  }
+]
