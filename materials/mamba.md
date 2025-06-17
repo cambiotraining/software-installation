@@ -55,7 +55,7 @@ Open a terminal and copy/paste the following commands (this will install Mamba i
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 /bin/bash Miniforge3-$(uname)-$(uname -m).sh -b -p $HOME/miniforge3
 rm Miniforge3-$(uname)-$(uname -m).sh
-$HOME/miniforge3/bin/mamba init --all
+$HOME/miniforge3/bin/mamba shell init
 ```
 
 Restart your terminal and confirm that your shell now starts with the word `(base)`.
@@ -77,7 +77,7 @@ Open a terminal and copy/paste the following commands (this will install Mamba i
 wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 bash Miniforge3-$(uname)-$(uname -m).sh -b -p $HOME/miniforge3
 rm Miniforge3-$(uname)-$(uname -m).sh
-$HOME/miniforge3/bin/mamba init
+$HOME/miniforge3/bin/mamba shell init
 ```
 
 Restart your terminal and confirm that your shell now starts with the word `(base)`.
