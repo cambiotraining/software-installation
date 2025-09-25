@@ -47,15 +47,14 @@ book:
     pinned: true
     logo: "_extensions/cambiotraining/courseformat/img/university_crest_reversed.png"
     right:
-      - icon: github
+      - text: "{{< iconify fa6-brands github size=lg title='CRIT GitHub' >}}"
         href: https://github.com/cambiotraining/software-installation
-        aria-label: Bioinformatics Training Facility GitHub
-      - icon: twitter
-        href: https://twitter.com/bioinfocambs
-        aria-label: Bioinformatics Training Facility Twitter
-      - icon: mastodon
+      - text: "{{< iconify fa6-brands bluesky size=lg title='CRIT Bluesky' >}}"
+        href: https://bsky.app/profile/bioinfocambs.bsky.social
+      - text: "{{< iconify fa6-brands mastodon size=lg title='CCRIT Mastodon' >}}"
         href: https://genomic.social/@BioInfoCambs
-        aria-label: Bioinformatics Training Facility Mastodon
+      - text: "{{< iconify mdi web size=lg title='CCRIT Website' >}}"
+        href: https://bioinfotraining.bio.cam.ac.uk/
     title: "Software installation instructions"
   chapters:
     - part: "Welcome"
