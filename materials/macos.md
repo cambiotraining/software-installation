@@ -2,7 +2,7 @@
 pagetitle: "Software installation"
 ---
 
-# macOS
+# macOS utilities
 
 ## Xcode Command Line Tools
 

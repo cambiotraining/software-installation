@@ -2,7 +2,7 @@
 pagetitle: "Software installation"
 ---
 
-# WSL
+# Windows WSL2
 
 The **Windows Subsystem for Linux (WSL2)** is a compatibility layer within Windows that enables users to run a Linux "core" alongside the Windows operating system. 
 It is available for Windows 11 and recent versions of Windows 10. 
